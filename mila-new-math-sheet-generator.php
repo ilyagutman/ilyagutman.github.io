@@ -1,4 +1,5 @@
-
+<!DOCTYPE HTML>
+<html>
 <?php
 	$NUMBER_COLS = 4;
 	$NUMBER_ROWS = 4;
@@ -251,3 +252,5 @@ function isAll9($number) {
 }
 
 ?>
+</html>
+
