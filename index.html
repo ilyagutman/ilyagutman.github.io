@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 	<html>
-		<head><title>Mila's Math Assignment</title></head>
+		<head><title>Mila's Math Assignments</title></head>
 			<body>
 	
 				<form action="mila-new-math-sheet-generator.php" method="post" id="form">
-					<!-- First name:<br>
-					<input type="text" name="firstname" value="Foo"><br> -->
-					Minimum Generated Number
-					<input type="text" style="text-align:right" name="minimum" value="0"><br>
-					Maximum Generated Number
-					<input type="text" style="text-align:right" name="maximum" value="100"><br>
+					<h2>Welcome to Mila's Math Assignments Generator</h2>
+					Lowest Generated Number (any positive number)
+					<input type="text" size="5" style="text-align:right" name="minimum" value="0"><br>
+					Highest Generated Number (any positive number)
+					<input type="text" size="5" style="text-align:right" name="maximum" value="100"><br>
 					Options
 					<select name="options" form="form">
 						<option value="both_no_restrictions">Additions and Subtractions No Restrictions</option>
 						<option value="both_no_carryover_no_borrow">Additions and Subtractions with No Carryover and No Borrow</option>
 						<option value="additions_no_restrictions">Additions Only</option>
-						<option value="subtractions_no_restrictions">Subtractions Only</option>
 						<option value="additions_no_carryover">Additions Only No Carryover</option>
+						<option value="subtractions_no_restrictions">Subtractions Only</option>				
 						<option value="subtractions_no_borrow">Subtractions Only No Borrow</option>
 						<!-- <option value="additions_only_carryover">Additions Only All Carryover</option>
 						<option value="subtractions_only_borrow">Subtractions Only All Borrow</option> -->

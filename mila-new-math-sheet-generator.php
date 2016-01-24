@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 <?php
 	$NUMBER_COLS = 4;
 	$NUMBER_ROWS = 4;
@@ -21,7 +22,6 @@
 <table width='1000' border='1'>
 
 <?php
-
 	for($ndx = 0; $ndx < $NUMBER_ROWS; $ndx++)
 	{
 ?>		
