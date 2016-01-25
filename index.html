@@ -6,9 +6,9 @@
 				<form action="mila-new-math-sheet-generator.php" method="post" id="form">
 					<h2>Welcome to Mila's Math Assignments Generator</h2>
 					Lowest Generated Number (any positive number)
-					<input type="text" size="5" style="text-align:right" name="minimum" value="0"><br>
+					<input type="number" min="0" size="5" style="text-align:right" name="minimum" value="0"><br>
 					Highest Generated Number (any positive number)
-					<input type="text" size="5" style="text-align:right" name="maximum" value="100"><br>
+					<input type="number" min="1" size="5" style="text-align:right" name="maximum" value="100"><br>
 					Options
 					<select name="options" form="form">
 						<option value="both_no_restrictions">Additions and Subtractions No Restrictions</option>

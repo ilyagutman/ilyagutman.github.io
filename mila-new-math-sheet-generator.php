@@ -12,7 +12,12 @@
 	$SUBTRACTION_ONLY = false;
 	$TITLE = "Mila's Math Assignment ";
 	
-	loadUserOptions();
+	try {
+		loadUserOptions();
+	} catch (Exception $e) {
+		echo 'User error: ',  $e->getMessage(), "\n";
+		exit(1);
+	}
 ?>
 
 <form name='table' align='center' id='table' action='table.php' method='post'>
@@ -200,6 +205,15 @@ function loadUserOptions() {
 
 	$MIN = $_POST['minimum'];
 	$MAX = $_POST['maximum'];
+	
+	if ($MIN > $MAX) {
+		throw new Exception('The lowest generated number should be lower than the highest generated number.');
+	}
+	
+	// This validation was added to the input form, but here is just in case someone accidently removes it
+	if ($MIN < 0 || $MAX < 0) {
+		throw new Exception('A generated number can not be < 0.');
+	}
 	
 	if (strcasecmp($_POST['options'], 'both_no_restrictions') === 0) {
 		// use defaults
