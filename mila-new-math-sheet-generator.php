@@ -24,6 +24,11 @@
 	<h2><br><?php echo $TITLE ?></h2>
 </form>
 
+<!-- Print page button -->
+<form name='table' align='left'>
+	<input type="button" value="Print this Assignment" onClick="window.print()"></br></br>
+</form>
+
 <table width='1000' border='1'>
 
 <?php
